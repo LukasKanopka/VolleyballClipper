@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		3B5402582F21AB170016D2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B5402412F21AB160016D2E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5402482F21AB160016D2E2;
+			remoteInfo = VolleyballClipper;
+		};
+		3B5402622F21AB170016D2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B5402412F21AB160016D2E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5402482F21AB160016D2E2;
+			remoteInfo = VolleyballClipper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B5402492F21AB160016D2E2 /* VolleyballClipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolleyballClipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5402572F21AB170016D2E2 /* VolleyballClipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolleyballClipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5402612F21AB170016D2E2 /* VolleyballClipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolleyballClipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3B54024B2F21AB160016D2E2 /* VolleyballClipper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VolleyballClipper;
+			sourceTree = "<group>";
+		};
+		3B54025A2F21AB170016D2E2 /* VolleyballClipperTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VolleyballClipperTests;
+			sourceTree = "<group>";
+		};
+		3B5402642F21AB170016D2E2 /* VolleyballClipperUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VolleyballClipperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B5402462F21AB160016D2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5402542F21AB170016D2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B54025E2F21AB170016D2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B5402402F21AB160016D2E2 = {
+			isa = PBXGroup;
+			children = (
+				3B54024B2F21AB160016D2E2 /* VolleyballClipper */,
+				3B54025A2F21AB170016D2E2 /* VolleyballClipperTests */,
+				3B5402642F21AB170016D2E2 /* VolleyballClipperUITests */,
+				3B54024A2F21AB160016D2E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B54024A2F21AB160016D2E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B5402492F21AB160016D2E2 /* VolleyballClipper.app */,
+				3B5402572F21AB170016D2E2 /* VolleyballClipperTests.xctest */,
+				3B5402612F21AB170016D2E2 /* VolleyballClipperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B5402482F21AB160016D2E2 /* VolleyballClipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B54026B2F21AB170016D2E2 /* Build configuration list for PBXNativeTarget "VolleyballClipper" */;
+			buildPhases = (
+				3B5402452F21AB160016D2E2 /* Sources */,
+				3B5402462F21AB160016D2E2 /* Frameworks */,
+				3B5402472F21AB160016D2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3B54024B2F21AB160016D2E2 /* VolleyballClipper */,
+			);
+			name = VolleyballClipper;
+			packageProductDependencies = (
+			);
+			productName = VolleyballClipper;
+			productReference = 3B5402492F21AB160016D2E2 /* VolleyballClipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B5402562F21AB170016D2E2 /* VolleyballClipperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B54026E2F21AB170016D2E2 /* Build configuration list for PBXNativeTarget "VolleyballClipperTests" */;
+			buildPhases = (
+				3B5402532F21AB170016D2E2 /* Sources */,
+				3B5402542F21AB170016D2E2 /* Frameworks */,
+				3B5402552F21AB170016D2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B5402592F21AB170016D2E2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3B54025A2F21AB170016D2E2 /* VolleyballClipperTests */,
+			);
+			name = VolleyballClipperTests;
+			packageProductDependencies = (
+			);
+			productName = VolleyballClipperTests;
+			productReference = 3B5402572F21AB170016D2E2 /* VolleyballClipperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B5402602F21AB170016D2E2 /* VolleyballClipperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B5402712F21AB170016D2E2 /* Build configuration list for PBXNativeTarget "VolleyballClipperUITests" */;
+			buildPhases = (
+				3B54025D2F21AB170016D2E2 /* Sources */,
+				3B54025E2F21AB170016D2E2 /* Frameworks */,
+				3B54025F2F21AB170016D2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B5402632F21AB170016D2E2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3B5402642F21AB170016D2E2 /* VolleyballClipperUITests */,
+			);
+			name = VolleyballClipperUITests;
+			packageProductDependencies = (
+			);
+			productName = VolleyballClipperUITests;
+			productReference = 3B5402612F21AB170016D2E2 /* VolleyballClipperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B5402412F21AB160016D2E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					3B5402482F21AB160016D2E2 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					3B5402562F21AB170016D2E2 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 3B5402482F21AB160016D2E2;
+					};
+					3B5402602F21AB170016D2E2 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 3B5402482F21AB160016D2E2;
+					};
+				};
+			};
+			buildConfigurationList = 3B5402442F21AB160016D2E2 /* Build configuration list for PBXProject "VolleyballClipper" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B5402402F21AB160016D2E2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3B54024A2F21AB160016D2E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B5402482F21AB160016D2E2 /* VolleyballClipper */,
+				3B5402562F21AB170016D2E2 /* VolleyballClipperTests */,
+				3B5402602F21AB170016D2E2 /* VolleyballClipperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B5402472F21AB160016D2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5402552F21AB170016D2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B54025F2F21AB170016D2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B5402452F21AB160016D2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5402532F21AB170016D2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B54025D2F21AB170016D2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B5402592F21AB170016D2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5402482F21AB160016D2E2 /* VolleyballClipper */;
+			targetProxy = 3B5402582F21AB170016D2E2 /* PBXContainerItemProxy */;
+		};
+		3B5402632F21AB170016D2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5402482F21AB160016D2E2 /* VolleyballClipper */;
+			targetProxy = 3B5402622F21AB170016D2E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B5402692F21AB170016D2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B54026A2F21AB170016D2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3B54026C2F21AB170016D2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VolleyballClipper/VolleyballClipper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaskanopka.VolleyballClipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B54026D2F21AB170016D2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VolleyballClipper/VolleyballClipper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaskanopka.VolleyballClipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3B54026F2F21AB170016D2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaskanopka.VolleyballClipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolleyballClipper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VolleyballClipper";
+			};
+			name = Debug;
+		};
+		3B5402702F21AB170016D2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaskanopka.VolleyballClipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolleyballClipper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VolleyballClipper";
+			};
+			name = Release;
+		};
+		3B5402722F21AB170016D2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaskanopka.VolleyballClipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VolleyballClipper;
+			};
+			name = Debug;
+		};
+		3B5402732F21AB170016D2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 526WND8FW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaskanopka.VolleyballClipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VolleyballClipper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B5402442F21AB160016D2E2 /* Build configuration list for PBXProject "VolleyballClipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5402692F21AB170016D2E2 /* Debug */,
+				3B54026A2F21AB170016D2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B54026B2F21AB170016D2E2 /* Build configuration list for PBXNativeTarget "VolleyballClipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B54026C2F21AB170016D2E2 /* Debug */,
+				3B54026D2F21AB170016D2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B54026E2F21AB170016D2E2 /* Build configuration list for PBXNativeTarget "VolleyballClipperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B54026F2F21AB170016D2E2 /* Debug */,
+				3B5402702F21AB170016D2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B5402712F21AB170016D2E2 /* Build configuration list for PBXNativeTarget "VolleyballClipperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5402722F21AB170016D2E2 /* Debug */,
+				3B5402732F21AB170016D2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B5402412F21AB160016D2E2 /* Project object */;
+}
