@@ -22,6 +22,7 @@ Use the **Batch** tab to:
 - Select multiple videos
 - Choose an output folder
 - Run analysis/classification for each video and export diagnostics per video (`summary.json`, `predicted_clips.csv`, and optional `frames.csv` / `debug.csv`)
+- `transitions.csv` is also exported to show state machine transitions and trigger context per transition.
 
 ## Tuning & Debugging
 

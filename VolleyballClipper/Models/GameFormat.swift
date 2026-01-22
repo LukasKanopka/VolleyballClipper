@@ -24,6 +24,10 @@ enum GameFormat: String, CaseIterable, Identifiable, Sendable {
                 readyMaxEnergy: 0.18,
                 huddleScoreThreshold: 10,
                 resetLowEnergySeconds: 2.0,
+                lowEnergyDecayRate: 0.5,
+                enableHuddleStopTrigger: false,
+                minActionSecondsBeforeHuddleStop: 0.0,
+                stopEnergyMedianWindowSeconds: 0.0,
                 enableWarmupSkipping: true
             )
         case .grass:
@@ -33,6 +37,10 @@ enum GameFormat: String, CaseIterable, Identifiable, Sendable {
                 readyMaxEnergy: 0.18,
                 huddleScoreThreshold: 9,
                 resetLowEnergySeconds: 2.0,
+                lowEnergyDecayRate: 0.5,
+                enableHuddleStopTrigger: true,
+                minActionSecondsBeforeHuddleStop: 0.3,
+                stopEnergyMedianWindowSeconds: 0.0,
                 enableWarmupSkipping: true
             )
         case .indoor:
@@ -42,9 +50,12 @@ enum GameFormat: String, CaseIterable, Identifiable, Sendable {
                 readyMaxEnergy: 0.18,
                 huddleScoreThreshold: 7,
                 resetLowEnergySeconds: 2.0,
+                lowEnergyDecayRate: 0.5,
+                enableHuddleStopTrigger: false,
+                minActionSecondsBeforeHuddleStop: 0.0,
+                stopEnergyMedianWindowSeconds: 0.4,
                 enableWarmupSkipping: true
             )
         }
     }
 }
-

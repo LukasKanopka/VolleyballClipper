@@ -12,6 +12,7 @@ enum RallyProcessor {
         var actionStartTime: Double?
         var lowEnergySeconds: Double = 0
         var readySeconds: Double = 0
+        var actionSeconds: Double = 0
 
         var clipsRaw: [(start: Double, end: Double)] = []
         clipsRaw.reserveCapacity(64)
@@ -21,6 +22,9 @@ enum RallyProcessor {
 
         var stabilityWindow: [FrameMetrics] = []
         stabilityWindow.reserveCapacity(90)
+
+        var stopEnergyWindow: [(t: Double, e: Double)] = []
+        stopEnergyWindow.reserveCapacity(32)
 
         func isReadyPosition(_ window: [FrameMetrics]) -> Bool {
             guard let latest = window.last else { return false }
@@ -52,8 +56,22 @@ enum RallyProcessor {
             stabilityWindow.append(frame)
             stabilityWindow.removeAll(where: { frame.timestamp - $0.timestamp > tuning.readyStabilityWindowSeconds })
 
+            if tuning.stopEnergyMedianWindowSeconds > 0 {
+                stopEnergyWindow.append((t: frame.timestamp, e: Double(frame.teamEnergy)))
+                stopEnergyWindow.removeAll(where: { frame.timestamp - $0.t > tuning.stopEnergyMedianWindowSeconds })
+            } else {
+                stopEnergyWindow.removeAll(keepingCapacity: true)
+            }
+
             let readyPos = isReadyPosition(stabilityWindow)
             let huddled = isHuddled(frame)
+            let stopEnergy: Double = {
+                guard tuning.stopEnergyMedianWindowSeconds > 0, !stopEnergyWindow.isEmpty else {
+                    return Double(frame.teamEnergy)
+                }
+                let sorted = stopEnergyWindow.map(\.e).sorted()
+                return sorted[sorted.count / 2]
+            }()
 
             if !warmupGateOpened {
                 if frame.teamEnergy >= tuning.actionEnergyThreshold {
@@ -77,6 +95,7 @@ enum RallyProcessor {
                 readySeconds = 0
                 lowEnergySeconds = 0
                 actionStartTime = nil
+                actionSeconds = 0
                 if readyPos {
                     state = .ready
                     potentialStartTime = frame.timestamp
@@ -88,6 +107,7 @@ enum RallyProcessor {
                 if frame.teamEnergy >= tuning.actionEnergyThreshold {
                     state = .action
                     actionStartTime = frame.timestamp
+                    actionSeconds = 0
                 } else if !readyPos {
                     state = .idle
                     potentialStartTime = nil
@@ -98,12 +118,21 @@ enum RallyProcessor {
 
             case .action:
                 if actionStartTime == nil { actionStartTime = frame.timestamp }
+                actionSeconds += delta
 
-                let reset = frame.teamEnergy <= tuning.walkingEnergyThreshold
-                if reset { lowEnergySeconds += delta } else { lowEnergySeconds = 0 }
+                let reset = stopEnergy <= Double(tuning.walkingEnergyThreshold)
+                if reset {
+                    lowEnergySeconds += delta
+                } else {
+                    lowEnergySeconds = max(0, lowEnergySeconds - (delta * tuning.lowEnergyDecayRate))
+                }
 
-                if huddled || lowEnergySeconds >= tuning.resetLowEnergySeconds {
-                    let endTime = huddled ? frame.timestamp : max(startTimestamp, frame.timestamp - tuning.resetLowEnergySeconds)
+                let allowHuddleStop = tuning.enableHuddleStopTrigger && (actionSeconds >= tuning.minActionSecondsBeforeHuddleStop)
+                let huddleStop = allowHuddleStop && huddled
+                let lowEnergyStop = lowEnergySeconds >= tuning.resetLowEnergySeconds
+
+                if huddleStop || lowEnergyStop {
+                    let endTime = huddleStop ? frame.timestamp : max(startTimestamp, frame.timestamp - tuning.resetLowEnergySeconds)
                     let startTime = potentialStartTime ?? (actionStartTime ?? frame.timestamp)
                     if warmupGateOpened {
                         clipsRaw.append((start: startTime, end: endTime))
@@ -118,6 +147,7 @@ enum RallyProcessor {
                 actionStartTime = nil
                 lowEnergySeconds = 0
                 readySeconds = 0
+                actionSeconds = 0
             }
 
             debug.append(

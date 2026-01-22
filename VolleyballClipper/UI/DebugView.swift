@@ -59,6 +59,25 @@ struct DebugView: View {
                                 Text("\(model.tuningConfig.resetLowEnergySeconds, specifier: "%.1f")s")
                             }
                         }
+                        LabeledContent("Low-energy decay rate") {
+                            Stepper(value: $model.tuningConfig.lowEnergyDecayRate, in: 0...2.0, step: 0.1) {
+                                Text("\(model.tuningConfig.lowEnergyDecayRate, specifier: "%.1f")")
+                            }
+                        }
+
+                        Toggle("Enable huddle stop", isOn: $model.tuningConfig.enableHuddleStopTrigger)
+                        if model.tuningConfig.enableHuddleStopTrigger {
+                            LabeledContent("Min action seconds before huddle") {
+                                Stepper(value: $model.tuningConfig.minActionSecondsBeforeHuddleStop, in: 0...5.0, step: 0.1) {
+                                    Text("\(model.tuningConfig.minActionSecondsBeforeHuddleStop, specifier: "%.1f")s")
+                                }
+                            }
+                        }
+                        LabeledContent("Stop energy median window") {
+                            Stepper(value: $model.tuningConfig.stopEnergyMedianWindowSeconds, in: 0...1.0, step: 0.1) {
+                                Text("\(model.tuningConfig.stopEnergyMedianWindowSeconds, specifier: "%.1f")s")
+                            }
+                        }
 
                         HStack {
                             Button("Re-run classification") { model.reclassifyFromExistingFrames() }
